@@ -8,7 +8,7 @@ import VisibilityOff from '@material-ui/icons/VisibilityOff';
 import Visibility from '@material-ui/icons/Visibility';
 
 
-function Registeration() {  
+function Registration() {  
 const navigate = useNavigate()
 const [input, setInput] = useState({
   firstname : "",
@@ -170,4 +170,4 @@ return (
   )
 }
 
-export default Registeration
+export default Registration

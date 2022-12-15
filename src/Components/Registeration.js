@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import {Avatar, Button, Grid, Paper, TextField, Typography} from '@material-ui/core';
 import { Link, useNavigate } from 'react-router-dom';
 import FormValidation from './FormValidation';
@@ -52,8 +52,6 @@ const headerStyle = {margin:'5px'}
 const textStyle = {marginBottom:"15px"}
 const butnStyle = {alignSelf:"center", backgroundColor:"green", color:"white"}
 
-// const classes = useStyles();
-
 return (
     <>
       <Grid>
@@ -94,8 +92,6 @@ return (
                        value={input.email} 
                        onChange={ (e) => setInput({...input,[e.target.name] : e.target.value})}/>
                        {errors.email && <p style={{color:"red",marginBottom:"20px"}}>{errors.email}</p>}
-            
-
             <TextField label="Password"
                        variant='outlined'
                        name='password'
